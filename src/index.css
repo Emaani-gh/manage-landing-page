@@ -7,3 +7,24 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.menus{
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in;
+}
+
+.menus.open{
+    opacity: 1;
+    visibility: visible;
+} 
+
+.hamburger.closebtn .line-1{
+    transform: rotate(45deg) translate(5px,5px)
+}
+.hamburger.closebtn .line-2{
+    opacity: 0;
+}
+.hamburger.closebtn .line-3{
+    transform: rotate(-45deg) translate(5px,-5px);
+}
